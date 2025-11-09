@@ -8,7 +8,7 @@
 body {
     background-color: rgb(214, 212, 212);
     margin: 0;
-    padding-top: 70px;  /* Only for fixed navbar */
+    padding-top: 70px;
 }
 
 nav {
@@ -199,14 +199,14 @@ a{
     display: flex;
 }
 
-/* ====== HERO SECTION - ULTRA COMPACT (NO UNNECESSARY SPACE) ====== */
+/* ====== HERO SECTION - REDUCED SPACING ====== */
 .content-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1400px;
-    margin: 0 auto;  /* REMOVED all top/bottom margins */
-    padding: 20px 60px;  /* REDUCED to minimal padding */
+    margin: 20px auto 40px;  /* REDUCED from 80px to 20px top margin */
+    padding: 30px 60px;  /* REDUCED from 40px to 30px padding */
     gap: 50px;
 }
 
@@ -220,26 +220,26 @@ a{
 .hero-logo {
     width: 350px;
     max-width: 100%;
-    margin-bottom: 10px;  /* REDUCED to minimal */
+    margin-bottom: 15px;  /* REDUCED from 20px to 15px */
 }
 
 .text-content p {
     font-size: 14px;
     color: #666;
-    margin-bottom: 5px;  /* REDUCED */
+    margin-bottom: 8px;  /* REDUCED from 10px to 8px */
 }
 
 .text-content h1 {
     font-size: 42px;
     font-weight: 700;
-    margin-bottom: 8px;  /* REDUCED */
+    margin-bottom: 12px;  /* REDUCED from 15px to 12px */
     line-height: 1.2;
 }
 
 .text-content h4 {
     font-size: 16px;
     color: #555;
-    margin-bottom: 12px;  /* REDUCED */
+    margin-bottom: 15px;  /* REDUCED from 20px to 15px */
 }
 
 /* Image stays on the RIGHT side */
@@ -275,7 +275,7 @@ a{
     color: black;
     position: relative;
     text-align: center;
-    margin: 10px 0;  /* REDUCED to minimal */
+    margin: 20px;  /* REDUCED spacing */
 }
 
 .title::after {
@@ -295,7 +295,7 @@ a{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 30px;
-    margin: 30px auto;  /* REDUCED */
+    margin: 40px auto;  /* REDUCED from 60px to 40px */
     max-width: 1200px;
     padding: 0 20px;
     justify-items: center;
@@ -459,19 +459,13 @@ a{
     color: grey;
 }
 
-/* Add spacing element remover - for any <br> tags */
-br {
-    display: none;
-}
-
 /* ====== RESPONSIVE MEDIA QUERIES ====== */
 
 /* Wide monitors (1920px and up) */
 @media (min-width: 1920px) {
     .content-section {
         max-width: 1600px;
-        margin: 0 auto;
-        padding: 25px 60px;
+        margin: 30px auto 50px;
     }
 
     .hero-logo {
@@ -497,8 +491,7 @@ br {
 @media (min-width: 1440px) and (max-width: 1919px) {
     .content-section {
         max-width: 1300px;
-        margin: 0 auto;
-        padding: 25px 60px;
+        margin: 25px auto 45px;
     }
 
     .hero-logo {
@@ -519,8 +512,8 @@ br {
 @media (min-width: 1024px) and (max-width: 1439px) {
     .content-section {
         max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px 40px;
+        margin: 20px auto 40px;
+        padding: 30px 40px;
     }
 
     .hero-logo {
@@ -549,7 +542,7 @@ br {
 
     .content-section {
         flex-direction: column;
-        margin: 0 auto;
+        margin: 20px auto;
         padding: 20px;
         text-align: center;
     }
@@ -593,7 +586,7 @@ br {
     }
 
     .content-section {
-        margin: 0 auto;
+        margin: 15px auto;
         padding: 15px;
     }
 
@@ -608,7 +601,7 @@ br {
     .product-grid {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 15px;
-        margin: 20px auto;
+        margin: 30px auto;
     }
 
     .product-card {
