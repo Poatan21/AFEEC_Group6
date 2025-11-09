@@ -199,7 +199,7 @@ a{
     display: flex;
 }
 
-/* ====== HERO/CONTENT SECTION - FIXED TO KEEP IMAGE ON RIGHT ====== */
+/* ====== HERO SECTION - FIXED ====== */
 .content-section {
     display: flex;
     align-items: center;
@@ -207,15 +207,40 @@ a{
     max-width: 1400px;
     margin: 80px auto;
     padding: 40px 60px;
-    gap: 40px;
+    gap: 50px;
 }
 
-.content-section > div:first-child {
+/* Text content on the left */
+.text-content {
     flex: 1;
     max-width: 600px;
 }
 
-/* FIXED: Image stays on the RIGHT side */
+.hero-logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.text-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.text-content h4 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Image stays on the RIGHT side */
 .right-img {
     width: 100%;
     max-width: 500px;
@@ -263,7 +288,7 @@ a{
     border-radius: 2px;
 }
 
-/* ====== PRODUCT GRID - FIXED FOR RESPONSIVE ====== */
+/* ====== PRODUCT GRID ====== */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -302,10 +327,18 @@ a{
     color: #000;
 }
 
+.product-card h5 {
+    font-size: 12px;
+    color: #666;
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
 .price {
     font-weight: bold;
     color: #333;
-    margin-top: 5px;
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 .new-tag {
@@ -381,7 +414,7 @@ a{
     transform: translateY(-3px);
 }
 
-/* ====== CATEGORIES - FIXED FOR RESPONSIVE ====== */
+/* ====== CATEGORIES ====== */
 .categories {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -496,6 +529,10 @@ a{
         text-align: center;
     }
 
+    .text-content {
+        max-width: 100%;
+    }
+
     .right-img {
         max-width: 100%;
         margin-top: 30px;
@@ -529,6 +566,10 @@ a{
     .content-section {
         margin: 40px auto;
         padding: 20px 15px;
+    }
+
+    .text-content h1 {
+        font-size: 28px;
     }
 
     .product-grid {
