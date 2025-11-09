@@ -201,20 +201,25 @@ a{
 
 /* ====== HERO SECTION - ULTRA COMPACT ====== */
 .content-section {
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
     justify-content: space-between !important;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px 60px;
-    gap: 50px;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 20px 60px !important;
+    gap: 50px !important;
+    width: 100% !important;
+    position: relative !important;
 }
 
 /* Text content on the left - FIXED ORDER */
 .text-content {
-    flex: 1;
-    max-width: 600px;
+    flex: 1 !important;
+    max-width: 600px !important;
     order: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
 }
 
 /* Large AFEEC logo */
@@ -245,14 +250,19 @@ a{
 
 /* Image stays on the RIGHT side - FIXED POSITIONING */
 .right-img {
-    width: 100% !important;
+    width: 500px !important;
     max-width: 500px !important;
-    height: auto;
-    border-radius: 15px;
-    object-fit: cover;
-    flex-shrink: 0;
+    height: auto !important;
+    border-radius: 15px !important;
+    object-fit: cover !important;
+    flex-shrink: 0 !important;
     order: 2 !important;
-    margin-left: auto !important;
+    margin-left: 50px !important;
+    display: block !important;
+    flex-grow: 0 !important;
+    position: relative !important;
+    z-index: 1 !important;
+    align-self: center !important;
 }
 
 .shop-btn {
@@ -720,3 +730,4 @@ br {
         gap: 10px;
     }
 }
+
