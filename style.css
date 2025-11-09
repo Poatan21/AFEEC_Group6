@@ -216,9 +216,11 @@ a{
     max-width: 600px;
 }
 
+/* FIXED: Made the hero logo MUCH BIGGER like in the screenshot */
 .hero-logo {
-    width: 150px;
-    margin-bottom: 10px;
+    width: 350px;
+    max-width: 100%;
+    margin-bottom: 20px;
 }
 
 .text-content p {
@@ -465,6 +467,10 @@ a{
         max-width: 1600px;
     }
 
+    .hero-logo {
+        width: 400px;
+    }
+
     .right-img {
         max-width: 550px;
     }
@@ -486,6 +492,10 @@ a{
         max-width: 1300px;
     }
 
+    .hero-logo {
+        width: 380px;
+    }
+
     .product-grid {
         grid-template-columns: repeat(4, 1fr);
         max-width: 1300px;
@@ -501,6 +511,10 @@ a{
     .content-section {
         max-width: 1000px;
         padding: 40px 40px;
+    }
+
+    .hero-logo {
+        width: 300px;
     }
 
     .right-img {
@@ -531,6 +545,10 @@ a{
 
     .text-content {
         max-width: 100%;
+    }
+
+    .hero-logo {
+        width: 250px;
     }
 
     .right-img {
@@ -566,6 +584,10 @@ a{
     .content-section {
         margin: 40px auto;
         padding: 20px 15px;
+    }
+
+    .hero-logo {
+        width: 200px;
     }
 
     .text-content h1 {
