@@ -203,18 +203,18 @@ a{
 .content-section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between !important;
     max-width: 1400px;
     margin: 0 auto;
     padding: 20px 60px;
     gap: 50px;
 }
 
-/* Text content on the left */
+/* Text content on the left - FIXED ORDER */
 .text-content {
     flex: 1;
     max-width: 600px;
-    order: 1;
+    order: 1 !important;
 }
 
 /* Large AFEEC logo */
@@ -243,15 +243,16 @@ a{
     margin-bottom: 12px;
 }
 
-/* Image stays on the RIGHT side */
+/* Image stays on the RIGHT side - FIXED POSITIONING */
 .right-img {
-    width: 100%;
-    max-width: 500px;
+    width: 100% !important;
+    max-width: 500px !important;
     height: auto;
     border-radius: 15px;
     object-fit: cover;
     flex-shrink: 0;
-    order: 2;
+    order: 2 !important;
+    margin-left: auto !important;
 }
 
 .shop-btn {
@@ -535,20 +536,20 @@ br {
         max-width: 1600px;
         padding: 25px 60px;
     }
-    
+
     .hero-logo {
         width: 400px;
     }
-    
+
     .right-img {
         max-width: 550px;
     }
-    
+
     .product-grid {
         grid-template-columns: repeat(4, 1fr);
         max-width: 1400px;
     }
-    
+
     .categories {
         grid-template-columns: repeat(4, 1fr);
         max-width: 1400px;
@@ -560,16 +561,16 @@ br {
         max-width: 1300px;
         padding: 25px 60px;
     }
-    
+
     .hero-logo {
         width: 380px;
     }
-    
+
     .product-grid {
         grid-template-columns: repeat(4, 1fr);
         max-width: 1300px;
     }
-    
+
     .categories {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -580,20 +581,20 @@ br {
         max-width: 1000px;
         padding: 20px 40px;
     }
-    
+
     .hero-logo {
         width: 300px;
     }
-    
+
     .right-img {
         max-width: 400px;
     }
-    
+
     .product-grid {
         grid-template-columns: repeat(3, 1fr);
         max-width: 1000px;
     }
-    
+
     .categories {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -603,42 +604,42 @@ br {
     .nav-links {
         display: none;
     }
-    
+
     .content-section {
         flex-direction: column;
         padding: 20px;
         text-align: center;
     }
-    
+
     .text-content {
         max-width: 100%;
         order: 1;
     }
-    
+
     .right-img {
         max-width: 100%;
         order: 2;
         margin-top: 20px;
     }
-    
+
     .hero-logo {
         width: 250px;
     }
-    
+
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-    
+
     .categories {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-    
+
     .about-section {
         padding: 40px 30px;
     }
-    
+
     .footer-content {
         padding: 0 20px;
     }
@@ -648,61 +649,61 @@ br {
     nav {
         padding: 15px 20px;
     }
-    
+
     .logo-img {
         width: 20%;
     }
-    
+
     .content-section {
         padding: 15px;
     }
-    
+
     .hero-logo {
         width: 200px;
     }
-    
+
     .text-content h1 {
         font-size: 28px;
     }
-    
+
     .product-grid {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 15px;
         margin: 20px auto;
     }
-    
+
     .product-card {
         max-width: 100%;
     }
-    
+
     .product-card img {
         height: 180px;
     }
-    
+
     .categories {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .about-section {
         padding: 30px 20px;
     }
-    
+
     .about-section h2 {
         font-size: 24px;
     }
-    
+
     .footer-content {
         flex-direction: column;
         gap: 15px;
         text-align: center;
         padding: 0 15px;
     }
-    
+
     .social-media {
         justify-content: center;
     }
-    
+
     .social-media a {
         width: 30px;
         height: 30px;
@@ -714,7 +715,7 @@ br {
     .footer-content {
         gap: 10px;
     }
-    
+
     .social-media {
         gap: 10px;
     }
